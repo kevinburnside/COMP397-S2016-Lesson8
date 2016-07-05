@@ -1,4 +1,13 @@
 /**
+ * @author Tom Tsiliopoulos ttsliop@my.centennialcollege.ca
+ * @studentID 300818577
+ * @date July 4, 2016
+ * @version 0.01 - Initial version of the button class
+ */
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+/**
  * This is the generic objects namespace
  * 
  * @module objects
@@ -13,6 +22,8 @@ module objects {
      * @extends {createjs.Bitmap}
      */
     export class Button extends createjs.Bitmap {
+
+        // CONSTRUCTOR +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         /**
          * Creates an instance of Button.
          * 
@@ -39,6 +50,8 @@ module objects {
             this.on("mouseout", this._mouseOut, this)
         }
 
+        // PRIVATE METHODS +++++++++++++++++++++++++++++++++++++++++++++++++++
+
         /**
          * This is an event handler for the mouseover event
          * 
@@ -62,3 +75,5 @@ module objects {
         }
     }
 }
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
