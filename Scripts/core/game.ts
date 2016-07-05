@@ -9,6 +9,12 @@ let helloLabel:createjs.Text;
 
 let startButton:objects.Button; // reference to our button class
 
+/**
+ * This method is the entry point for the application
+ * 
+ * @method init
+ * @return {void}
+ */
 function init():void {
     stage = new createjs.Stage(canvas); // instatiate the stage container
     stage.enableMouseOver(20);
@@ -17,11 +23,23 @@ function init():void {
     main(); // call the main game function
 }
 
-function gameLoop():void {
+/**
+ * This is the main game loop
+ * 
+ * @method gameLoop
+ * @param {createjs.Event} event
+ * @returns {void}
+ */
+function gameLoop(event:createjs.Event):void {
 
     stage.update(); // refreshes the stage
 }
 
+/**
+ * This is the startButton click event handler
+ * 
+ * @param {createjs.MouseEvent} event
+ */
 function startButtonClick(event:createjs.MouseEvent) {
     helloLabel.text = "clicked!";
 }
@@ -47,4 +65,5 @@ function main():void {
     startButton.on("click", startButtonClick);
 }
 
+//wait until the window object is finished loading then call the init method
 window.addEventListener("load", init);
