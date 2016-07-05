@@ -7,6 +7,14 @@ var objects;
 (function (objects) {
     var Button = (function (_super) {
         __extends(Button, _super);
+        /**
+         * Creates an instance of Button.
+         *
+         * @param {string} pathString
+         * @param {number} x
+         * @param {number} y
+         * @param {boolean} isCentered
+         */
         function Button(pathString, x, y, isCentered) {
             _super.call(this, pathString);
             if (isCentered) {

@@ -26,6 +26,12 @@ function startButtonClick(event:createjs.MouseEvent) {
     helloLabel.text = "clicked!";
 }
 
+/**
+ * This is the main game method
+ * 
+ * @method main
+ * @returns {void}
+ */
 function main():void {
     helloLabel =  new createjs.Text("Hello World!","40px Consolas", "#000000");
     helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
