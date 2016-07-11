@@ -15,7 +15,7 @@ namespace core{
 // make a reference to the canvas element
 let canvas:HTMLElement = document.getElementById("canvas");
 // create a reference to a stage container
-let stage:createjs.Stage;
+export let stage:createjs.Stage;
 
 let helloLabel:createjs.Text;
 
