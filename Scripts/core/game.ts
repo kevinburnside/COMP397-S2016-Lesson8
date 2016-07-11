@@ -63,11 +63,8 @@ function startButtonClick(event:createjs.MouseEvent) {
  * @returns {void}
  */
 function main():void {
-    helloLabel =  new createjs.Text("Hello World!","40px Consolas", "#000000");
-    helloLabel.regX = helloLabel.getMeasuredWidth() * 0.5;
-    helloLabel.regY = helloLabel.getMeasuredHeight() * 0.5;
-    helloLabel.x = 320;
-    helloLabel.y = 240;
+    helloLabel = new objects.label("Hello World", "40px", "Consolas", "#000000", 320, 240, true);
+   
     stage.addChild(helloLabel);
 
     startButton = new objects.Button(
